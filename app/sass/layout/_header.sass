@@ -1,0 +1,90 @@
+.header-top
+  padding: 10px 0px 
+  background-color: #037F7E
+  color: #fff
+  font-size: 14px
+  line-height: 2.14 
+  font-weight: 500
+  +media-sm 
+    padding: 7px 0
+
+.header-top__row
+  display: flex
+  justify-content: space-between
+  align-items: center
+  
+.header-top__contacts
+  a 
+    margin-right: 60px
+  span, img
+    vertical-align: middle
+  img 
+    margin-right: 15px
+  +media-sm 
+    a
+      display: block
+      margin-right: 0
+    img 
+      margin-right: 7px
+
+  
+.header-top__language
+  margin: 0 
+  padding: 0
+  list-style: none
+  li 
+    display: inline-block
+  li:first-child 
+    margin-right: 17px
+  li:not(.active) 
+    opacity: .5
+  li:not(.active):hover 
+    opacity: .7
+  +media-sm 
+    width: 60px
+    flex-shrink: 0
+    li:first-child 
+      margin-right: 10px
+
+// -------------------header-bottom----------------------
+
+.header-bottom
+  padding: 17px 0px
+  border: 1px solid #F0F0F0
+  background-color: #fff
+  +media-sm 
+    padding: 7px 0
+
+.header-bottom__row
+  position: relative
+  display: flex
+  align-items: center
+  +media-md 
+    justify-content: space-between
+  
+
+
+.header-bottom__logo
+  display: block
+  margin-right: 202px
+  width: 136px
+  img 
+    width: 100%
+  +media-md 
+    margin-right: auto
+  +media-sm 
+    width: 100px
+
+.header-bottom__nav
+  +media-sm 
+    display: none
+    position: absolute
+    top: 100%
+    left: -15px
+    right: -15px
+    z-index: 100
+
+.header-bottom__nav-btn
+  display: none
+  +media-sm 
+    display: block
